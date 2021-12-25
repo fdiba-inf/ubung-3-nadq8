@@ -1,0 +1,20 @@
+{
+  "files": {
+    "src/exercise3/NumberCounter.java": [
+      {
+        "id": "35ff016b-4fcf-41d9-9015-0bba46430285",
+        "line": 1,
+        "version": 84,
+        "index": 0
+      }
+    ],
+    "src/exercise3/PrimeNumber.java": [
+      {
+        "id": "603b1e33-d4ab-4bf9-8332-bba352736c2a",
+        "line": 1,
+        "version": 108,
+        "index": 0
+      }
+    ]
+  }
+}
