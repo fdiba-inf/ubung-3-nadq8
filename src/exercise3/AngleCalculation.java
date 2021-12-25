@@ -1,5 +1,4 @@
-packa1
-ge exercise3;
+package exercise3;
 
 import java.util.Scanner;
 
@@ -7,22 +6,24 @@ public class AngleCalculation {
 
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
+         
+         double value;
+         char type;
 
-        double value;
-        char type;
+         do {
+           value = input.nextDouble();
+           type = input.next().charAt(0);
 
-        do {
-          value = input.nextDouble();
-          type = input.next().charAt(0);
+           if(type == 'r') {
+             double convertedValue = value / Math.PI * 180;
+            System.out.println("Angle: " + convertedValue + "d");
+          
+           }else if (type == 'd') {
+             double convertedValue = value * Math.PI / 180;
+             System.out.println("Angle: " + convertedValue + "r");
+           }
 
-          if (type == 'r') {
-            double convertedValue = value / Math.PI * 180;
-            System.out.println("Angle: " + convertedValue + 'd');
-          } else if (type == 'd') {
-            double convertedValue = value * Math.PI / 180;
-            System.out.println("Angle: " + convertedValue + 'r');
-          }
-        } while (type == 'r' || type == 'd');
+         }while (type == 'r' || type == 'd');
     }
 
 }
